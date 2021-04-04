@@ -43,12 +43,12 @@ class UserForm extends StatelessWidget {
           child: Column(
             children: <Widget>[
               TextFormField(
-                decoration: InputDecoration(labelText: 'Nome'),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
+                decoration: InputDecoration(labelText: 'Nome*'),
+                validator: (name) {
+                  if (name == null || name.isEmpty) {
                     return 'Nome inválido';
                   }
-                  if (value.trim().length < 3) {
+                  if (name.trim().length < 3) {
                     return 'Nome deve ter mais que 2 caracteres';
                   }
 
@@ -57,7 +57,17 @@ class UserForm extends StatelessWidget {
                 onSaved: (value) => _formData['name'] = value,
               ),
               TextFormField(
-                decoration: InputDecoration(labelText: 'Telefone'),
+                decoration: InputDecoration(labelText: 'Telefone*'),
+                validator: (phone) {
+                  if (phone == null || phone.isEmpty) {
+                    return 'Telefone inválido';
+                  }
+                  if (phone.trim().length < 8) {
+                    return 'Campo telefone deve ter no minimo 8 dígitos';
+                  }
+
+                  return null;
+                },
                 onSaved: (value) => _formData['phone'] = value,
               ),
               TextFormField(
