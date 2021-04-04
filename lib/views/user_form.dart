@@ -11,7 +11,7 @@ class UserForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Formulário de usuário'),
+        title: Text('Novo contato'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.save),
@@ -25,7 +25,7 @@ class UserForm extends StatelessWidget {
                   User(
                     id: _formData['id'],
                     name: _formData['name'],
-                    email: _formData['email'],
+                    phone: _formData['phone'],
                     avatarUrl: _formData['avatarUrl'],
                   ),
                 );
@@ -57,8 +57,8 @@ class UserForm extends StatelessWidget {
                 onSaved: (value) => _formData['name'] = value,
               ),
               TextFormField(
-                decoration: InputDecoration(labelText: 'E-mail'),
-                onSaved: (value) => _formData['email'] = value,
+                decoration: InputDecoration(labelText: 'Telefone'),
+                onSaved: (value) => _formData['phone'] = value,
               ),
               TextFormField(
                 decoration: InputDecoration(labelText: 'URL do Perfil'),

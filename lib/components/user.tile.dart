@@ -15,14 +15,14 @@ class UserTile extends StatelessWidget {
     return ListTile(
       leading: avatar,
       title: Text(user.name),
-      subtitle: Text(user.email),
+      subtitle: Text(user.phone),
       trailing: Container(
         width: 100,
         child: Row(
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.edit),
-              color: Colors.orange,
+              color: Colors.black,
               onPressed: () {
                 Navigator.of(context).pushNamed(
                   AppRoutes.User_Form,
