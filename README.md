@@ -1,11 +1,6 @@
 
 <p align="center"> 
-  <img src="https://github.com/viniciusBotelho625/Moviet/blob/main/public/logo-full.svg" width="800">
-</p>
-
-<h3 align="center"></h3>
-<p align="center"> 
-  <img src="https://github.com/viniciusBotelho625/Moviet/blob/main/TXPa.gif" width="500">
+  <img src="https://jornalboavista.com.br/site/wp-content/uploads/2020/03/fdec4032a25557564976374b8f6ba6bb.png" width="600">
 </p>
 
 <h3>Tecnologias 💻</h3>
