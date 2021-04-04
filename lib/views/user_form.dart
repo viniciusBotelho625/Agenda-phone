@@ -3,9 +3,32 @@ import 'package:app_crud/provider/users.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class UserForm extends StatelessWidget {
+class UserForm extends StatefulWidget {
+  @override
+  _UserFormState createState() => _UserFormState();
+}
+
+class _UserFormState extends State<UserForm> {
   final _form = GlobalKey<FormState>();
+
   final Map<String, String> _formData = {};
+
+  void _readFormData(User user) {
+    if (user != null) {
+      _formData['id'] = user.id;
+      _formData['name'] = user.name;
+      _formData['phone'] = user.phone;
+      _formData['avatarUrl'] = user.avatarUrl;
+    }
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final User user = ModalRoute.of(context).settings.arguments;
+
+    _readFormData(user);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,6 +66,7 @@ class UserForm extends StatelessWidget {
           child: Column(
             children: <Widget>[
               TextFormField(
+                initialValue: _formData['name'],
                 decoration: InputDecoration(labelText: 'Nome*'),
                 validator: (name) {
                   if (name == null || name.isEmpty) {
@@ -57,6 +81,7 @@ class UserForm extends StatelessWidget {
                 onSaved: (value) => _formData['name'] = value,
               ),
               TextFormField(
+                initialValue: _formData['phone'],
                 decoration: InputDecoration(labelText: 'Telefone*'),
                 validator: (phone) {
                   if (phone == null || phone.isEmpty) {
@@ -71,6 +96,7 @@ class UserForm extends StatelessWidget {
                 onSaved: (value) => _formData['phone'] = value,
               ),
               TextFormField(
+                initialValue: _formData['avatarUrl'],
                 decoration: InputDecoration(labelText: 'URL do Perfil'),
                 onSaved: (value) => _formData['avatarUrl'] = value,
               ),
