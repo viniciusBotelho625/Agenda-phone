@@ -24,9 +24,7 @@
 <p>Foi usado como fonte de conhecimento o vídeo "CRUD com Flutter" do canal Cod3r Cursos. O projeto é uma agenda de contatos, onde o usuário pode cadastrar um novo contato, deletar, alterar e listar todos membros de sua agenda. Não foi implementado nenhum banco de dados para guardar as alterações, os dados ficam mocados em um array. Desta forma, quando fecha o APP e inicia o novamente os dados são perdidos. O próximo nivel é implementar um banco de dados 😎</p>
 <br></br>
 <p align="center"> 
-  <img src="https://github.com/viniciusBotelho625/Moviet/blob/main/home.png">
-  <img src="https://github.com/viniciusBotelho625/Moviet/blob/main/desafio.png">
-  <img src="https://github.com/viniciusBotelho625/Moviet/blob/main/level.png">
+  <img src="https://github.com/viniciusBotelho625/Agenda-phone/blob/main/Mokup.png">
 </p>
 <h3>Como contribuir 😎</h3>
 <ul>
