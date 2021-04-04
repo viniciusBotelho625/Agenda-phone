@@ -11,7 +11,7 @@ class User {
     this.id,
     @required this.name,
     @required this.email,
-    @required this.phone,
+    this.phone,
     @required this.avatarUrl,
   });
 }
