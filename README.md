@@ -21,7 +21,7 @@
   </li>
 </ul>
 <h3>Sobre o projeto 🚀</h3>
-<p>Foi usado como fonte de conhecimento o vídeo "CRUD com Flutter" do canal Cod3r Cursos. O projeto é uma agenda de contatos, onde o usuário pode cadastrar um novo contato, deletar, alterar e listar todos membros de sua agenda. Não foi implementado nenhum banco de dados para guardar as alterações, os dados ficam mocados em um array. Desta forma, quando fecha o APP e inica o novamente os dados são deletados. O próximo nivel é implementar um banco de dados 😎</p>
+<p>Foi usado como fonte de conhecimento o vídeo "CRUD com Flutter" do canal Cod3r Cursos. O projeto é uma agenda de contatos, onde o usuário pode cadastrar um novo contato, deletar, alterar e listar todos membros de sua agenda. Não foi implementado nenhum banco de dados para guardar as alterações, os dados ficam mocados em um array. Desta forma, quando fecha o APP e inicia o novamente os dados são perdidos. O próximo nivel é implementar um banco de dados 😎</p>
 <br></br>
 <p align="center"> 
   <img src="https://github.com/viniciusBotelho625/Moviet/blob/main/home.png">
@@ -38,7 +38,7 @@
 </ul>
 <h3>Para rodar a aplicação 🔄</h3>
 <ul>
-  <p>Será necessário que tenha um emulador instalado em sua máquina ou use o próprio aparelho celular</p>
+  <li>Será necessário que tenha um emulador instalado em sua máquina ou use o próprio aparelho celular</li>
   <li>Conecte o emulador ou celular ao projeto e realize o build da aplicação</li>
 </ul>
 
